@@ -57,6 +57,18 @@ a:hover{
 .padding_0{
 	padding: 0;
 }
+.padding60 {
+  padding: 30px;
+  font-size: 16px;
+}
+
+.sm-info span{
+	font-family:"neuzeit-grotesk";
+	color:#fff;
+	display:block;
+	font-size:16px;
+}
+
 .gray_bg{
 	background: #fafafa;
 }

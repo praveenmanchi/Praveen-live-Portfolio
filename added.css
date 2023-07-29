@@ -76,14 +76,15 @@ body {
 }
 
 .BABE-CARE-UI-UX- {
-    width: 305px;
+    /* width: 305px;
     height: 31px;
-    margin: 68px 509px 28px 64px;
+    margin: 68px 509px 28px 64px; */
     font-family: "Arial";
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 600;
-    text-align: left;
+    /* text-align: center; */
     color: #fff;
+    margin-top: 10px;
 
 }
 

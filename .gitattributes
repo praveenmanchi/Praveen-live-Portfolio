@@ -1,2 +1,37 @@
-# Auto detect text files and perform LF normalization
+# Normalize line endings to LF on checkout
 * text=auto
+
+# Specify line endings for Windows users (optional)
+*.html text eol=crlf
+*.css text eol=crlf
+*.js text eol=crlf
+
+# Treat minified files as binary to avoid line ending conversion
+*.min.js binary
+*.min.css binary
+
+# Define custom diff for image files
+*.png diff=image
+*.jpg diff=image
+*.jpeg diff=image
+*.gif diff=image
+*.svg diff=image
+
+# Treat video files as binary to avoid text handling
+*.mp4 binary
+*.avi binary
+*.flv binary
+*.wmv binary
+*.mov binary
+
+# Exclude build and temporary files from diffs
+/build/ -diff
+/node_modules/ -diff
+*.log -diff
+
+# Ignore certain files when creating an archive
+*.psd export-ignore
+*.ai export-ignore
+
+# Specify custom merge strategy for JSON files (if any)
+*.json merge=json

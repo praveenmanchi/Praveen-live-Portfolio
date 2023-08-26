@@ -280,6 +280,40 @@
                 window.location.pathname.replace(/\.html/g, '')
             )
         </script>
+        <!-- Custom Script -->
+<script>
+    // Remove .html extension from URLs
+    window.history.replaceState(
+        null,
+        null,
+        window.location.pathname.replace(/\.html/g, '')
+    )
+</script>
+
+<!-- Add web-vitals library -->
+<script src="https://unpkg.com/web-vitals@1"></script>
+
+<!-- Measure Core Web Vitals -->
+<script>
+    // Import the web-vitals library
+    import {getCLS, getFID, getLCP, getFCP, getTTFB} from 'web-vitals';
+
+    // Measure FCP (First Contentful Paint)
+    getFCP((metric) => {
+        console.log('FCP:', metric);
+    });
+
+    // Measure LCP (Largest Contentful Paint)
+    getLCP((metric) => {
+        console.log('LCP:', metric);
+    });
+
+    // Measure CLS (Cumulative Layout Shift)
+    getCLS((metric) => {
+        console.log('CLS:', metric);
+    });
+</script>
+        
 </body>
 
 </html>

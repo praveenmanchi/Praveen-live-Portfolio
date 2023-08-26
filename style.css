@@ -72,13 +72,18 @@ a:hover{
 	font-size:16px;
 }
 
+.navbar-fixed {
+  background-image: linear-gradient(black, transparent) !important;
+  position: fixed;
+}
+
 .gray_bg{
 	background: #fafafa;
 }
 .dark_bg_1{
 	background: #000;
 }
-.dark_bg_2{
+.dfark_bg_2{
 	background: #0F1113;
 }
 .form-control::-webkit-input-placeholder {

@@ -117,48 +117,6 @@
 .button .icon div svg {
   stroke: var(--active);
 }
-.button .icon div svg.arrow {
-  width: 40px;
-  height: 32px;
-  opacity: var(--arrow-opacity, 1);
-  transition: opacity 0s linear var(--all-delay, 1s);
-}
-.button .icon div svg.progress {
-  width: 444px;
-  height: 10px;
-  position: absolute;
-  left: 0;
-  top: 11px;
-  transform: translateX(var(--progress-x, 0));
-  opacity: var(--progress-opacity, 0);
-  transition: transform var(--all-transition, 4.4s) ease var(--all-delay, 0.4s),
-    opacity 0s linear var(--all-delay, 1s);
-  -webkit-animation: var(--hide, none) 0s linear forwards var(--all-delay, 4.8s);
-  animation: var(--hide, none) 0s linear forwards var(--all-delay, 4.8s);
-}
-.button.loading:not(.reset) {
-  --line-y: -36px;
-  --line-array: 0;
-  --line-offset: 15px;
-  --active-offset: 0;
-  --arrow-opacity: 0;
-  --progress-opacity: 1;
-  --progress-x: -400px;
-  --tick-opacity: 1;
-  --before-rotate: 47deg;
-  --after-rotate: -46deg;
-  --hide: hide;
-  --overflow: overflow;
-  --icon-x: 2px;
-  --icon-y: 7px;
-  --count-opacity: 1;
-  --count-y: 0;
-  --count: count;
-}
-.button.reset {
-  --all-delay: 0s;
-  --all-transition: 0.3s;
-}
 
 @-webkit-keyframes hide {
   to {
@@ -216,12 +174,6 @@ html {
   font-family: "Roboto", Arial, sans-serif;
 } */
 
-body .dribbble {
-  position: fixed;
-  display: block;
-  right: 20px;
-  bottom: 20px;
-}
 body .dribbble img {
   display: block;
   width: 300px;

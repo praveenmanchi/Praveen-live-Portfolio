@@ -30,7 +30,7 @@ For any inquiries or collaboration, please contact:
 ## Owner
 
 - **Name**: Praveen Manchi
-- **Website**: [Praveenmanchi.com](http://www.praveenmanchi.com)
+- **Website**: [Praveenmanchi](http://www.praveenmanchi.art)
 
 ## License
 

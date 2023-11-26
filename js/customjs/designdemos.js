@@ -6,7 +6,7 @@
         $('.design-images .image-container').on('click', (event) => {
             const clickedElement = event.currentTarget;
             const clickedTagName = clickedElement.tagName;
-            let clickedImgSrc_data = '';
+            let clickedImgSrc_data;
             switch (clickedTagName) {
                 case 'SPAN':
                     clickedImgSrc_data = $(clickedElement).parent('img').data('slide');

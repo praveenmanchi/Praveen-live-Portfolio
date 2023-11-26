@@ -184,11 +184,8 @@
      height: 0;
      clear: both;
   }
-  .handmade {
-    text-align:right;
-    margin-top:100px;
-  }
-  .handmade em {
+
+    .handmade em {
     font-family: 'Shadows Into Light', cursive;
     font-size: 1.25em;
     margin-left:5px;
@@ -332,31 +329,8 @@
     -webkit-animation: var(--hide, none) 0s linear forwards var(--all-delay, 4.8s);
     animation: var(--hide, none) 0s linear forwards var(--all-delay, 4.8s);
   }
-  .button.loading:not(.reset) {
-    --line-y: -36px;
-    --line-array: 0;
-    --line-offset: 15px;
-    --active-offset: 0;
-    --arrow-opacity: 0;
-    --progress-opacity: 1;
-    --progress-x: -400px;
-    --tick-opacity: 1;
-    --before-rotate: 47deg;
-    --after-rotate: -46deg;
-    --hide: hide;
-    --overflow: overflow;
-    --icon-x: 2px;
-    --icon-y: 7px;
-    --count-opacity: 1;
-    --count-y: 0;
-    --count: count;
-  }
-  .button.reset {
-    --all-delay: 0s;
-    --all-transition: 0.3s;
-  }
-  
-  @-webkit-keyframes hide {
+
+    @-webkit-keyframes hide {
     to {
       opacity: 0;
     }
@@ -411,14 +385,7 @@
     background: #275EFE;
     font-family: "Roboto", Arial, sans-serif;
   } */
-  
-  body .dribbble {
-    position: fixed;
-    display: block;
-    right: 20px;
-    bottom: 20px;
-  }
-  body .dribbble img {
+    body .dribbble img {
     display: block;
     width: 300px;
   }

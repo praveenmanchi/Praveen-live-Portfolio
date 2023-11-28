@@ -1,0 +1,28 @@
+# robots.txt for https://praveenmanchi.art
+
+User-agent: *
+Disallow: 
+
+# Sitemap location
+Sitemap: https://praveenmanchi.art/sitemap.xml
+
+# Prevent crawling of non-public or resource-intensive pages
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
+
+# Disallow crawling of files that can bloat your crawl budget
+Disallow: /large-video-file.mp4
+Disallow: /high-res-image.jpg
+
+# Disallow crawling of pages that are duplicated or don't add value
+Disallow: /printversion/
+Disallow: /duplicate-content/
+
+# Rate Limiting for Crawlers (Advanced)
+# Some search engines respect crawl-delay directive to limit crawl rate
+# Crawl-delay: 10  # Number of seconds for delay between hits
+
+# Additional rules can be added here
+
